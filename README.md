@@ -1,4 +1,4 @@
-# YouTube's addblock popup remover
+# YouTube's adblock popup remover
 
 This extension works only for Chromium based browsers.
 

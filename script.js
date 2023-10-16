@@ -1,4 +1,4 @@
-console.log("[YouTube Addblock popup remover v1.0.0]");
+console.log("[YouTube Adblock popup remover v1.0.0]");
 
 // https://stackoverflow.com/a/54389066
 document.addEventListener("yt-page-data-updated", () => {
