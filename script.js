@@ -6,11 +6,12 @@ function isVideoPlaying(video) {
 
 // https://stackoverflow.com/a/54389066
 document.addEventListener("yt-page-data-updated", () => {
-    const popup = document.querySelector("ytd-popup-container");
-    if (popup) {
-        console.log("YT adblock popup found!");
-        popup.remove();
-    }
+    [document.querySelector("ytd-popup-container"), document.querySelector("tp-yt-paper-dialog")].forEach(popup => {
+        if (popup) {
+            console.log("YT adblock popup found!");
+            popup.remove();
+        }
+    });
 
     setTimeout(() => {
         const video = document.querySelector("video");
