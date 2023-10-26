@@ -1,4 +1,5 @@
-console.log("[YouTube Adblock popup remover v1.0.0]");
+// Set defaults
+const version = "1.0.2";
 
 function isVideoPlaying(video) {
     return video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2;
@@ -20,3 +21,5 @@ document.addEventListener("yt-page-data-updated", () => {
         }
     }, 500);
 });
+
+console.log(`[Adblock popup remover v${version}]`);

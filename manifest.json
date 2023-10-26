@@ -1,7 +1,7 @@
 {
     "name": "YouTube's adblock popup remover",
     "description": "Extension to remove YouTube's annoying adblock popup",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "manifest_version": 3,
     "author": "github.com/harvestcore",
     "content_scripts": [
@@ -9,5 +9,8 @@
             "matches": ["<all_urls>"],
             "js": ["script.js"]
         }
-    ]
+    ],
+    "action": {
+        "default_popup": "index.html"
+    }
 }
