@@ -10,6 +10,7 @@
             "js": ["script.js"]
         }
     ],
+    "permissions": ["storage"],
     "action": {
         "default_popup": "index.html"
     }
